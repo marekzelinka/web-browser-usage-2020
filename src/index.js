@@ -11,6 +11,13 @@ const colors = {
   edge: "#57D269",
 };
 
+const data = {
+  Safari: 19.24,
+  Chrome: 63.54,
+  Firefox: 3.79,
+  Edge: 3.41,
+};
+
 const render = (type) => {
   if (chart) {
     chart.destroy();
@@ -18,11 +25,11 @@ const render = (type) => {
   chart = new Chart(context, {
     type: type,
     data: {
-      labels: ["Safari", "Chrome", "Firefox", "Edge"],
+      labels: Object.keys(data),
       datasets: [
         {
-          label: "Browser stats",
-          data: [19.24, 63.54, 3.79, 3.41],
+          label: "Browser usage in %",
+          data: Object.values(data),
           backgroundColor: [
             colors.safari,
             colors.chrome,
