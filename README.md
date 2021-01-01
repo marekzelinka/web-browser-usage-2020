@@ -3,7 +3,7 @@
   <p>
     Charts that summarize the usage share of popular browsers
     <br />
-    <a href="https://inventory-ten.vercel.app/"><strong>Website »</strong></a>
+    <a href="http://web-browser-usage-2020-git-master.mzelinka17.vercel.app/"><strong>Website »</strong></a>
   </p>
 </div>
 
